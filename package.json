@@ -1,0 +1,24 @@
+{
+  "name": "Analytics-Spammers",
+  "version": "1.0.0",
+  "description": "Ce modeste dépôt a pour objectif de bâtir une liste des spammeurs Analytics.",
+  "main": "spammers.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkibaTech/Analytics-Spammers.git"
+  },
+  "keywords": [
+    "analytics",
+    "spammers",
+    "spam"
+  ],
+  "author": "AkibaTech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AkibaTech/Analytics-Spammers/issues"
+  },
+  "homepage": "https://github.com/AkibaTech/Analytics-Spammers"
+}
