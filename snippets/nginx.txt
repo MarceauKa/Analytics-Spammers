@@ -1,50 +1,59 @@
 location / {
-if ($http_referer ~* "^http:\/\/.*?addons.mozilla.org\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?addons.mozilla\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?aliexpress.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?aliexpress\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?buy-cheap-online.info\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?buy-cheap-online\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?darodar.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?darodar\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?depositfiles-porn.ga\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?depositfiles-porn\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?event-tracking.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?domination\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?free-share-buttons.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?event-tracking\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?free-social-buttons.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?free-share-buttons\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?googlsucks.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?free-social-buttons\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?guardlink.org\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?googlsucks\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?hulfingtonpost.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?get-free-traffic-now\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?humanorightswatch.org\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?guardlink\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?o-o-6-o-o.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?hulfingtonpost\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?simple-share-buttons.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?humanorightswatch\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?theguardlan.com\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?o-o-6-o-o\..*\/"){
+	return 403;
 }
-if ($http_referer ~* "^http:\/\/.*?youporn-forum.ga\..*\/"){
-return 403;
+if ($http_referer ~* "^http:\/\/.*?rapidgator-porn\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?simple-share-buttons\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?theguardlan\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?youporn-forum\..*\/"){
+	return 403;
 }
 }
