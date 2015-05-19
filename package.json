@@ -1,5 +1,5 @@
 {
-  "name": "Analytics-Spammers",
+  "name": "analytics-spammers",
   "version": "1.0.0",
   "description": "Ce modeste dépôt a pour objectif de bâtir une liste des spammeurs Analytics.",
   "main": "spammers.json",
