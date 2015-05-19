@@ -15,9 +15,10 @@ Je vous invite à regarder dans la liste des sites référents dans vos stats po
 L'usage de cette liste est multiple. Cette dernière liste les noms de domaines référents habituellement utilisés pour le SPAM.
 
 Il y'a plusieurs façon de les bloquer :
-- Filtres Google Analytics
-- .htaccess
-- Script PHP
+* Filtres Google Analytics
+* .htaccess
+* Script PHP
+
 Et plein d'autres
 
 ## Snippets
@@ -32,5 +33,5 @@ Si le projet vous semble d'utilité publique, libre à vous de Puller sur ce dé
 
 ## Contributeurs
 
-Marceau Casals (Initiateur)
-Thomas Sileghem (Générateur Node.js)
+* Marceau Casals (Initiateur)
+* Thomas Sileghem (Générateur Node.js)
