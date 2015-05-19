@@ -4,7 +4,7 @@
 
 Ce modeste dépôt a pour objectif de bâtir une liste des spammeurs Analytics.
 
-Si vous ne savez pas ce que c'est, je vous invite à lire cet article : http://www.mauricelargeron.com/usages-des-filtres-antispam-dans-google-analytics/
+Si vous ne savez pas ce que c'est, je vous invite à lire cet article : https://marceau.casals.fr/blog/2015/05/le-htaccess-ce-heros
 
 Pour résumer, de nombreux sites tentent de faire du pognon en polluant les statistiques (Piwik, Google Analytics et consor) en faisant du SPAM par site référent.
 
@@ -29,3 +29,8 @@ En fonction du temps à ma disposition, j'essaieai de faire des scripts pour les
 ## Contribuer
 
 Si le projet vous semble d'utilité publique, libre à vous de Puller sur ce dépôt en ajoutant les spammers à la liste ou en proposant vos snippets.
+
+## Contributeurs
+
+Marceau Casals (Initiateur)
+Thomas Sileghem (Générateur Node.js)
