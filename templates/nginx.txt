@@ -1,0 +1,7 @@
+location / {
+{{#each spammers}}
+if ($http_referer ~* "^http:\/\/.*?{{this}}\..*\/"){
+	return 403;
+}
+{{/each}}
+}

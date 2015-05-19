@@ -1,0 +1,5 @@
+RewriteEngine on
+{{#each spammers}}
+RewriteCond %{HTTP_REFERER} ^http:\/\/.*?{{this}}\..*? [NC,OR]
+{{/each}}
+RewriteRule ^(.*)$ – [F,L]
