@@ -35,6 +35,9 @@ if ($http_referer ~* "^http:\/\/.*?free-social-buttons\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?googlsucks\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?generalporn\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?get-free-traffic-now\..*\/"){
 	return 403;
 }
@@ -45,6 +48,12 @@ if ($http_referer ~* "^http:\/\/.*?hulfingtonpost\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?humanorightswatch\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?kabbalah-red-bracelets\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?o00\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?o-o-6-o-o\..*\/"){
