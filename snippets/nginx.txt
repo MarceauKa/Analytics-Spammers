@@ -50,6 +50,9 @@ if ($http_referer ~* "^http:\/\/.*?hulfingtonpost\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?humanorightswatch\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?ilovevitaly\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?kabbalah-red-bracelets\..*\/"){
 	return 403;
 }
