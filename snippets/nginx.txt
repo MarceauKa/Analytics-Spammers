@@ -68,6 +68,9 @@ if ($http_referer ~* "^http:\/\/.*?pornhub-forum\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?rapidgator-porn\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?sanjosestartups\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?sexyteens.hol\..*\/"){
 	return 403;
 }
