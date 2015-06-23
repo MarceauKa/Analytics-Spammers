@@ -1,4 +1,7 @@
 location / {
+if ($http_referer ~* "^http:\/\/.*?100dollars-seo\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?addons.mozilla\..*\/"){
 	return 403;
 }
@@ -44,6 +47,9 @@ if ($http_referer ~* "^http:\/\/.*?get-free-traffic-now\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?guardlink\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?howtostopreferralspam\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?hulfingtonpost\..*\/"){
 	return 403;
 }
@@ -87,6 +93,9 @@ if ($http_referer ~* "^http:\/\/.*?urlmetriques\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?webmaster-traffic\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?windowssearch\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?youporn-forum\..*\/"){
