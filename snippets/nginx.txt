@@ -14,6 +14,9 @@ if ($http_referer ~* "^http:\/\/.*?aliexpress\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?best-seo-offer\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?best-seo-software\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?buttons-for-your-website\..*\/"){
 	return 403;
 }
@@ -102,6 +105,9 @@ if ($http_referer ~* "^http:\/\/.*?rapidgator-porn\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?sanjosestartups\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?seo-platform\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?sexyali\..*\/"){
