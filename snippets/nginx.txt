@@ -17,6 +17,9 @@ if ($http_referer ~* "^http:\/\/.*?best-seo-offer\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?best-seo-software\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?black-friday\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?buttons-for-your-website\..*\/"){
 	return 403;
 }
@@ -24,6 +27,9 @@ if ($http_referer ~* "^http:\/\/.*?buy-cheap-online\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?clicksor\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?copyrightclaims\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?darodar\..*\/"){
@@ -38,6 +44,9 @@ if ($http_referer ~* "^http:\/\/.*?domination\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?e-buyeasy\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?ekatalog\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?erot\..*\/"){
 	return 403;
 }
@@ -47,6 +56,9 @@ if ($http_referer ~* "^http:\/\/.*?event-tracking\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?floating-share-buttons\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?for-your\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?free-floating-buttons\..*\/"){
 	return 403;
 }
@@ -54,6 +66,9 @@ if ($http_referer ~* "^http:\/\/.*?free-share-buttons\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?free-social-buttons\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?googlemare\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?googlsucks\..*\/"){
@@ -83,6 +98,9 @@ if ($http_referer ~* "^http:\/\/.*?hulfingtonpost\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?humanorightswatch\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?ilikevitaly\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?ilovevitaly\..*\/"){
 	return 403;
 }
@@ -101,10 +119,19 @@ if ($http_referer ~* "^http:\/\/.*?pornhub-forum\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?qualitymarketzone\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?quit-smoking\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?rapidgator-porn\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?rusexy\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?sanjosestartups\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?santasgift\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?seo-platform\..*\/"){
@@ -119,6 +146,12 @@ if ($http_referer ~* "^http:\/\/.*?sexyteens.hol\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?simple-share-buttons\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?snip\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?social-widget\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?success-seo\..*\/"){
 	return 403;
 }
@@ -128,7 +161,16 @@ if ($http_referer ~* "^http:\/\/.*?theguardlan\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?torture\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?topseoservices\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?traffic2cash\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?traffic2money\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?trafficgenius\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?trafficmonetizer\..*\/"){
@@ -150,6 +192,9 @@ if ($http_referer ~* "^http:\/\/.*?windowssearch\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?youporn-forum\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?годом\..*\/"){
 	return 403;
 }
 }
