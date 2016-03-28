@@ -4,7 +4,7 @@
 
 Ce modeste dépôt a pour objectif de bâtir une liste des spammeurs Analytics ainsi que des snippets et modules à intégrer dans son appli pour s'en protéger.
 
-Si vous ne savez pas ce que c'est, je vous invite à lire cet article : https://marceau.casals.fr/blog/2015/05/le-htaccess-ce-heros
+Si vous ne savez pas ce que c'est, je vous invite à lire cet article : https://marceau.casals.fr/blog/2015/05/le-htaccess-ce-heros  
 On appelle communément ce type de spam du **SPAM par Référent** ou **Referer SPAM**.
 
 Pour résumer, de nombreux sites tentent de faire du pognon en polluant les statistiques (Piwik, Google Analytics et consor) en faisant du SPAM par site référent.
