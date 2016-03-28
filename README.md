@@ -17,7 +17,7 @@ L'usage de cette liste est multiple. Cette dernière liste les noms de domaines 
 Il y'a plusieurs façon de les bloquer :
 * Filtres Google Analytics
 * .htaccess
-* Script PHP
+* Script PHP (voir Module Laravel 5)
 
 Et plein d'autres
 
@@ -26,6 +26,57 @@ Et plein d'autres
 Le dossier snippets a pour objectif de contenir des scripts tout fait pour bloquer les spammeurs; en commençant par un fichier de configuration pour Apache et NGINX.
 
 En fonction du temps à ma disposition, j'essaieai de faire des scripts pour les différents Frameworks : CodeIgniter, Laravel et Symfony, pour ceux que je connais bien.
+
+## Module Laravel 5
+ 
+Un module pour Laravel 5 est disponible si vous souhaitez automatiser le blocage.  
+Il s'agit d'un middleware pour votre application que vous pourrez utiliser de manière globale ou seulement pour certaines routes.  
+
+Attention, bien que fonctionnel, le plugin est vraiment en phase de test. N'hésitez pas à l'améliorer :)
+
+#### Installation via Composer
+
+```bash
+composer require akibatech/analytics-spammers dev-master
+```
+
+#### Intégration à Laravel
+
+Il suffit pour cela d'ajouter une entrée à votre fichier App/Http/Kernel.php. Il y'a deux manières de procéder :
+
+De manière globale, comme le fait le middleware par défaut **CheckForMaintenance** :
+```php
+protected $middleware = [
+    \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+    \Akibatech\Spammers\Laravel\Http\Middleware\CheckForSpammers::class, // Sera appliqué pour chaque requête
+];
+```
+
+Ou pour certains groupes de route, par exemple pour le groupe **web** :
+```php
+protected $middlewareGroups = [
+    'web' => [
+        \App\Http\Middleware\EncryptCookies::class,
+        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        \App\Http\Middleware\Locale::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        \App\Http\Middleware\VerifyCsrfToken::class,
+        \Akibatech\Spammers\Laravel\Http\Middleware\CheckForSpammers::class, // Sera appliqué pour les routes sous le joug du groupe web
+    ],
+    'api' => [
+        'throttle:60,1',
+    ],
+];
+```
+
+#### Mise à jour du dictionnaire
+
+```bash
+composer update akibatech/analytics-spammers
+```
+
+Ceci mettra automatiquement à jour le dictionnaire de spammers, à savoir le fichier **spammers.json**.
 
 ## Contribuer
 
