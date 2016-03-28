@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Akibatech\\Laravel\\": "src/Laravel/"
+            "Akibatech\\Spammers\\": "src/Spammers"
         }
     }
 }

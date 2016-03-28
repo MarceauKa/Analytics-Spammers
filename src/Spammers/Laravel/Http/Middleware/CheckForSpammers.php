@@ -1,6 +1,6 @@
 <?php
 
-namespace Akibatech\Laravel\Http\Middleware;
+namespace Akibatech\Spammers\Laravel\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Arr;
@@ -11,7 +11,7 @@ use Pdp\PublicSuffixList;
  * This middleware protects your app from spammers based on a dictionary.
  *
  * Class CheckForSpammers
- * @package Akibatech\Laravel\Http\Middleware
+ * @package Akibatech\Spammers\Laravel\Http\Middleware
  */
 class CheckForSpammers
 {
@@ -33,7 +33,7 @@ class CheckForSpammers
 
         // Handle the dictionnary.
         // @todo Refactor that
-        $dir  = realpath( dirname(__FILE__) . '/../../../../' ) . '/';
+        $dir  = realpath( dirname(__FILE__) . '/../../../../../' ) . '/';
         $path = $dir . 'spammers.json';
         $file = file_get_contents($path);
 
