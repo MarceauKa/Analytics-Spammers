@@ -26,6 +26,9 @@ if ($http_referer ~* "^http:\/\/.*?7makemoneyonline\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?addons.mozilla\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?adtiger\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?aliexpress\..*\/"){
 	return 403;
 }
@@ -54,6 +57,9 @@ if ($http_referer ~* "^http:\/\/.*?darodar\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?depositfiles-porn\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?domain-tracker\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?domination\..*\/"){
@@ -123,6 +129,9 @@ if ($http_referer ~* "^http:\/\/.*?ilikevitaly\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?ilovevitaly\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?iphone5simulator\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?jjbabskoe\..*\/"){
@@ -206,6 +215,9 @@ if ($http_referer ~* "^http:\/\/.*?sexyali\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?sexyteens.hol\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?share-buttons\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?simple-share-buttons\..*\/"){
 	return 403;
 }
@@ -222,6 +234,9 @@ if ($http_referer ~* "^http:\/\/.*?theguardlan\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?torture\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?top1-seo-service\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?topseoservices\..*\/"){
@@ -258,6 +273,9 @@ if ($http_referer ~* "^http:\/\/.*?webmonetizer\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?windowssearch\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?wordpresscore\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?ykecwqlixx\..*\/"){
