@@ -1,7 +1,7 @@
 {
     "name": "akibatech/analytics-spammers",
     "description": "Protect your website from spammers.",
-    "keywords": ["analytics", "spam", "spammer", "dictionary", "laravel"],
+    "keywords": ["analytics", "spam", "spammer", "dictionary", "laravel", "google", "piwik", "blacklist"],
     "license": "MIT",
     "authors": [
         {

@@ -27,7 +27,7 @@ class CheckForSpammers
         $referer = $request->server->get('referer');
 
         // Referer is not provided, we continue
-        if (is_null($referer)) {
+        if (is_null($referer) OR env('APP_ENV', 'production') !== 'production') {
             return $next($request);
         }
 

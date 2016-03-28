@@ -2,13 +2,14 @@
 
 ## Qu'est-ce que c'est ?
 
-Ce modeste dépôt a pour objectif de bâtir une liste des spammeurs Analytics.
+Ce modeste dépôt a pour objectif de bâtir une liste des spammeurs Analytics ainsi que des snippets et modules à intégrer dans son appli pour s'en protéger.
 
 Si vous ne savez pas ce que c'est, je vous invite à lire cet article : https://marceau.casals.fr/blog/2015/05/le-htaccess-ce-heros
+On appelle communément ce type de spam du **SPAM par Référent** ou **Referer SPAM**.
 
 Pour résumer, de nombreux sites tentent de faire du pognon en polluant les statistiques (Piwik, Google Analytics et consor) en faisant du SPAM par site référent.
 
-Je vous invite à regarder dans la liste des sites référents dans vos stats pour vous rendre compte pourquoi c'est important et pourquoi c'est génant quand on cherche à avoir des stats fiables.
+Je vous invite à regarder dans la liste des sites référents dans vos stats pour vous rendre compte pourquoi c'est important et pourquoi c'est génant quand on cherche à avoir des stats fiables pour ses sites web.
 
 ## Usage
 
@@ -16,10 +17,8 @@ L'usage de cette liste est multiple. Cette dernière liste les noms de domaines 
 
 Il y'a plusieurs façon de les bloquer :
 * Filtres Google Analytics
-* .htaccess
+* .htaccess ou configuration nginx
 * Script PHP (voir Module Laravel 5)
-
-Et plein d'autres
 
 ## Snippets
 
@@ -33,6 +32,7 @@ Un module pour Laravel 5 est disponible si vous souhaitez automatiser le blocage
 Il s'agit d'un middleware pour votre application que vous pourrez utiliser de manière globale ou seulement pour certaines routes.  
 
 Attention, bien que fonctionnel, le plugin est vraiment en phase de test. N'hésitez pas à l'améliorer :)
+Notez également que le filtre est conçu pour fonctionner uniquement en production (APP_ENV = production)._
 
 #### Installation via Composer
 
@@ -81,6 +81,10 @@ Ceci mettra automatiquement à jour le dictionnaire de spammers, à savoir le fi
 ## Contribuer
 
 Si le projet vous semble d'utilité publique, libre à vous de Puller sur ce dépôt en ajoutant les spammers à la liste ou en proposant vos snippets.
+
+## Note
+
+Il existe également une base de données similaire proposée par Piwik : https://github.com/piwik/referrer-spam-blacklist
 
 ## Contributeurs
 
