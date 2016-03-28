@@ -1,0 +1,22 @@
+{
+    "name": "akibatech/analytics-spammers",
+    "description": "Protect your website from spammers.",
+    "keywords": ["analytics", "spam", "spammer", "dictionary", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marceau Casals",
+            "email": "marceau@casals.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*|5.2.*",
+        "jeremykendall/php-domain-parser": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akibatech\\Laravel\\": "src/Laravel/"
+        }
+    }
+}
