@@ -31,8 +31,8 @@ En fonction du temps à ma disposition, j'essaieai de faire des scripts pour les
 Un module pour Laravel 5 est disponible si vous souhaitez automatiser le blocage.  
 Il s'agit d'un middleware pour votre application que vous pourrez utiliser de manière globale ou seulement pour certaines routes.  
 
-Attention, bien que fonctionnel, le plugin est vraiment en phase de test. N'hésitez pas à l'améliorer :)
-Notez également que le filtre est conçu pour fonctionner uniquement en production (APP_ENV = production)._
+Attention, bien que fonctionnel, le plugin est vraiment en phase de test. N'hésitez pas à l'améliorer :)  
+Notez également que le filtre est conçu pour fonctionner uniquement en production (APP_ENV = production).
 
 #### Installation via Composer
 

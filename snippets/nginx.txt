@@ -2,7 +2,25 @@ location / {
 if ($http_referer ~* "^http:\/\/.*?100dollars-seo\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?12masterov\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?1pamm\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?1webmaster\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?2your\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?4webmasters\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?5forex\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?7makemoneyonline\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?addons.mozilla\..*\/"){
@@ -59,6 +77,9 @@ if ($http_referer ~* "^http:\/\/.*?floating-share-buttons\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?for-your\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?for-sex\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?free-floating-buttons\..*\/"){
 	return 403;
 }
@@ -104,7 +125,34 @@ if ($http_referer ~* "^http:\/\/.*?ilikevitaly\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?ilovevitaly\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?jjbabskoe\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?justprofit\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?kabbalah-red-bracelets\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?laxdrills\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?luxup\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?makemoneyonline\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?mebelcomplekt\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?net-profits\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?niki-mlt\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?nufaq\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?o00\..*\/"){
@@ -113,13 +161,28 @@ if ($http_referer ~* "^http:\/\/.*?o00\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?o-o-6-o-o\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?onlywoman\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?pornhub-forum\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?pornoforadult\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?portnoff\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?qualitymarketzone\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?quit-smoking\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?qwesa\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?ranksonic\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?rapidgator-porn\..*\/"){
@@ -176,10 +239,16 @@ if ($http_referer ~* "^http:\/\/.*?trafficgenius\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?trafficmonetizer\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?uasb\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?urlmetriques\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?videos-for-your-business\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?vodkoved\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?webmaster-traffic\..*\/"){
@@ -189,6 +258,9 @@ if ($http_referer ~* "^http:\/\/.*?webmonetizer\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?windowssearch\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?ykecwqlixx\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?youporn-forum\..*\/"){
