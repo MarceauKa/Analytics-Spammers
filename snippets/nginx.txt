@@ -20,6 +20,9 @@ if ($http_referer ~* "^http:\/\/.*?4webmasters\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?5forex\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?6hopping.com\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?7makemoneyonline\..*\/"){
 	return 403;
 }
@@ -110,6 +113,12 @@ if ($http_referer ~* "^http:\/\/.*?get-free-traffic-now\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?get-free-social-traffic\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?getrichquick\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?getrichquickly\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?guardlink\..*\/"){
 	return 403;
 }
@@ -143,13 +152,22 @@ if ($http_referer ~* "^http:\/\/.*?justprofit\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?kabbalah-red-bracelets\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?keywords-monitoring-your-success\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?laxdrills\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?luxup\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?m-google\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?makemoneyonline\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?makeprogress\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?mebelcomplekt\..*\/"){
@@ -219,6 +237,9 @@ if ($http_referer ~* "^http:\/\/.*?share-buttons\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?simple-share-buttons\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?smartphonediscount\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?snip\..*\/"){
