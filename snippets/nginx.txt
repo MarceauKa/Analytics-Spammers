@@ -74,6 +74,9 @@ if ($http_referer ~* "^http:\/\/.*?californianews\..*\/"){
 if ($http_referer ~* "^http:\/\/.*?clicksor\..*\/"){
 	return 403;
 }
+if ($http_referer ~* "^http:\/\/.*?compliance-don\..*\/"){
+	return 403;
+}
 if ($http_referer ~* "^http:\/\/.*?copyrightclaims\..*\/"){
 	return 403;
 }
@@ -108,6 +111,9 @@ if ($http_referer ~* "^http:\/\/.*?erot\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?event-tracking\..*\/"){
+	return 403;
+}
+if ($http_referer ~* "^http:\/\/.*?executehosting\..*\/"){
 	return 403;
 }
 if ($http_referer ~* "^http:\/\/.*?eyes-on-you\..*\/"){
