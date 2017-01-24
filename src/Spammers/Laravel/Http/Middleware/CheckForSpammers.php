@@ -26,27 +26,70 @@ class CheckForSpammers
     {
         $referer = $request->server->get('referer');
 
-        // Referer is not provided, we continue
         if (is_null($referer) OR env('APP_ENV', 'production') !== 'production') {
             return $next($request);
         }
 
-        // Handle the dictionnary.
-        // @todo Refactor that
-        $dir  = realpath( dirname(__FILE__) . '/../../../../../' ) . '/';
-        $path = $dir . 'spammers.json';
-        $file = file_get_contents($path);
-
-        // Dictionnary is not readable, abort.
-        if (empty($file)) {
-            abort(500, 'Unable to read spammers.json');
+        // Spammer detected?
+        if ($this->requestIsFromASpammer($referer)) {
+            abort(500, 'Nope!');
         }
 
-        $dictionary = json_decode($file);
+        // No spam, we can continue :)
+        return $next($request);
+    }
 
-        // Parse the referer
+    /**
+     * Get the spammers list.
+     *
+     * @return array
+     */
+    protected function getSpammersList()
+    {
+        $seconds_in_a_day = 86400;
+
+        return \Cache::remember($seconds_in_a_day, 'spammers.list', function() {
+            $dir  = realpath( dirname(__FILE__) . '/../../../../../' ) . '/';
+            $path = $dir . 'spammers.json';
+            $file = file_get_contents($path);
+
+            if (empty($file)) {
+                return [];
+            }
+
+            $dictionary = json_decode($file);
+
+            return $dictionary;
+        });
+    }
+
+    /**
+     * Get the host based on the referer.
+     *
+     * @param string $referer
+     * @return string
+     */
+    protected function getHost($referer)
+    {
         $url  = new Parser(new PublicSuffixList([]));
         $host = $url->parseHost($referer)->host;
+
+        return $host;
+    }
+
+    /**
+     * Check for a nope request.
+     *
+     * @param string $referer
+     * @return bool
+     */
+    protected function requestIsFromASpammer($referer)
+    {
+        // Get the dictionary
+        $dictionary = $this->getSpammersList();
+
+        // Parse the referer
+        $host = $this->getHost($referer);
 
         // Compare dictionary against the referer...
         $search = Arr::where($dictionary, function($key, $value) use ($host) {
@@ -55,10 +98,9 @@ class CheckForSpammers
 
         // ...and check for results
         if (count($search) > 0) {
-            abort(500, 'Spammers protection');
+            return true;
         }
 
-        // No spam, we can continue :)
-        return $next($request);
+        return false;
     }
 }
