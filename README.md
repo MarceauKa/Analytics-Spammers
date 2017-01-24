@@ -37,7 +37,7 @@ Notez également que le filtre est conçu pour fonctionner uniquement en product
 #### Installation via Composer
 
 ```bash
-composer require akibatech/analytics-spammers dev-master
+composer require akibatech/analytics-spammers
 ```
 
 #### Intégration à Laravel
@@ -56,16 +56,8 @@ Ou pour certains groupes de route, par exemple pour le groupe **web** :
 ```php
 protected $middlewareGroups = [
     'web' => [
-        \App\Http\Middleware\EncryptCookies::class,
-        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-        \Illuminate\Session\Middleware\StartSession::class,
-        \App\Http\Middleware\Locale::class,
-        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \App\Http\Middleware\VerifyCsrfToken::class,
+        // ... Les autres middleware
         \Akibatech\Spammers\Laravel\Http\Middleware\CheckForSpammers::class, // Sera appliqué pour les routes sous le joug du groupe web
-    ],
-    'api' => [
-        'throttle:60,1',
     ],
 ];
 ```
