@@ -48,7 +48,7 @@ class CheckForSpammers
     {
         $seconds_in_a_day = 86400;
 
-        return \Cache::remember($seconds_in_a_day, 'spammers.list', function() {
+        return \Cache::remember('spammers.list', $seconds_in_a_day, function() {
             $dir  = realpath( dirname(__FILE__) . '/../../../../../' ) . '/';
             $path = $dir . 'spammers.json';
             $file = file_get_contents($path);
