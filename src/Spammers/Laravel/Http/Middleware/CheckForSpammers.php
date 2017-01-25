@@ -46,7 +46,7 @@ class CheckForSpammers
      */
     protected function getSpammersList()
     {
-        $seconds_in_a_day = 86400;
+        $minutes_in_a_day = 1440;
 
         return \Cache::remember('spammers.list', $seconds_in_a_day, function() {
             $dir  = realpath( dirname(__FILE__) . '/../../../../../' ) . '/';
